@@ -1,0 +1,230 @@
+:root{
+  --var-bg : #000 ;
+  --grey-level1 : #131417;
+  --grey-level2 :#18191D ;
+  --white: #fff;
+  --unselected-state : #666666;
+  --success : #0AC18e;
+  --grey-level-4 :#808287;
+
+}
+*{
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+  font-family: arial ;
+}
+/* Main container */
+.main-content{
+  display: grid ;
+  grid-template-columns: max-content auto;
+}
+.side-bar{
+  min-height: 100vh;
+  background-color: var(--var-bg) ;
+  width: max-content;
+  color: var(--white);
+  display: grid;
+  /* padding: 10px; */
+  justify-content: space-between;
+  position: relative;
+}
+.logo{
+  padding: 10px 5px;
+}  
+.logo img {
+  width: 40px;
+  height: 60px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+
+/* links */
+.links {
+  width: 100%;
+  
+  /* padding: 10px 5px; */
+}
+.selected
+{
+  background:rgba(128, 128, 128, 0.241)!important;
+  width: 100%;
+  color: var(--white);
+  border-left: 5px solid var(--white);
+}
+.selected a {
+  color: var(--white)!important;
+}
+.links ul {
+  list-style: none;
+  
+  margin-bottom: 20px;
+}
+.links li {
+  color: var(--white);
+  padding: 10px 20px;
+  margin-top: 25px;
+  
+  margin-bottom: 25px;
+
+}
+.links a  {
+  font-size: 25px;
+  text-align: center;
+
+  color:  var(--unselected-state);
+}
+.notification {
+  position:absolute ;
+  bottom :20px;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.notification a {
+  font-size: 28px;
+  color:  var(--unselected-state);
+
+}
+.dot-icon{
+  height: 5px;
+  width: 5px;
+  background-color: var(--white);
+  position: absolute;
+  right: 6px;
+  top: 5px;
+  border-radius: 50%;
+}
+/* Content */
+.content-section{
+  background-color: var(--grey-level1);
+  padding: 30px;
+}
+/* Cards css */
+.row-for-cards {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: auto auto auto;
+  justify-content:space-evenly;
+  column-gap: 30px;
+}
+.card{
+  min-height: 400px;
+  width: 380px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--var-bg);
+}
+.card img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.titles
+{
+  background-color: var(--grey-level2);
+  padding: 10px;
+  border-radius: 10px;
+}
+.titles .title-content {
+  display: flex;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  background: var(--grey-level1);
+  justify-content: space-between;
+}
+.titles .title-content .text {
+  color:var(--white);
+}
+.title-content .code {
+  color: var(--grey-level-4);
+}
+.heading {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color:var(--white);
+}
+
+/* Top Accounnt section */
+.top-account-section {
+  display: flex;
+
+  justify-content: space-between;
+}
+.top-account-section .account-content {
+  background-color:var(--grey-level-4);
+  display: flex;
+  margin: 10px;
+  border-radius: 30px;
+  position: relative;
+  padding: 0px 10px;
+  width:max-content;
+}
+.top-account-section .account-content .logo img {
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 30px;
+}
+.top-account-section .account-content .currency {
+  color:var(--white);
+  position: relative;
+  top: 30%;
+}
+.top-account-section .account-content .title {
+  color:var(--white);
+  position: relative;
+  top: 30%;
+  margin-left: 30px;
+}
+.ratings {
+  color: var(--success);
+  font-size: 12px;
+  position: relative;
+  margin-left: 10px;
+  top: 35%;
+}
+/* Top title section */
+.top-title-section {
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.top-title-section .title {
+  color: var(--white);
+  font-size: 30px;
+}
+.top-title-section .icon{
+  color: var(--white);
+  padding: 2px;
+  height: max-content;
+  border-radius: 10px;
+  background-color: var(--grey-level-4);
+}
+/* Footer */
+.footer
+{
+  display: flex;
+  justify-content: center;
+}
+.footer .contents {
+  background-color: var(--grey-level2);
+  width: 450px;
+display: flex; 
+justify-content: space-between;
+ border-radius: 40px;
+  padding:10px 10px;
+}
+.arrows{
+  font-size: 40px;
+  text-align: center;
+  color: var(--white);
+  padding:10px 15px;
+  background-color:var(--grey-level1) ;
+  border-radius: 50%;
+}
+.arrows i {
+  position: relative;
+  top: 5px;
+}
